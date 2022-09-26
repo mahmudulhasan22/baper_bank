@@ -15,4 +15,8 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const prevWithdrawTotal = getTextElementValueById('withdraw-total');
     const newWithdrawTotal = prevWithdrawTotal + newWithdrawAmmount;
     setTextElementValueByID('withdraw-total', newWithdrawTotal);
+
+    const prevBalanceTotal = getTextElementValueById('main-balance');
+    const newBalanceTotal = prevBalanceTotal - newWithdrawAmmount  ;
+    setTextElementValueByID('main-balance' , newBalanceTotal );
 })
